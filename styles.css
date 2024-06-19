@@ -1,0 +1,57 @@
+body {
+    background: url('https://c4.wallpaperflare.com/wallpaper/649/598/466/dragon-ball-dragon-ball-super-vegeta-super-saiyajin-blue-wallpaper-preview.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Saiyan Sans', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.combat-log {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #f5a623;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 20px #f5a623;
+}
+
+.combat-round {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(245, 166, 35, 0.8);
+    border-radius: 5px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    box-shadow: 0 0 10px #f5a623;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.combat-round.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@font-face {
+    font-family: 'Saiyan Sans';
+    src: url('https://example.com/saiyan-sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f5a623;
+    text-shadow: 2px 2px 5px #000000;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #f5a623;
+    text-shadow: 2px 2px 5px #000000;
+    margin-bottom: 20px;
+}
